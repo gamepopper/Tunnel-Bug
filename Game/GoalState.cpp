@@ -68,7 +68,7 @@ void GoalState::Update(float dt)
 	text->SetFillTint(VColour::HSVtoRGB(0.0f, 0.0f, 1.0f, player->Position.x < 0.0f ? 0.0f : player->Position.x / 100.0f < 1.0f ? player->Position.x / 100.0f : 1.0f));
 
 	if ((int)player->Position.x % 20 == 0)
-		VGlobal::p()->Sound->Play("stars", (1.0f - DefaultCamera->Zoom) + 0.25f * 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+		VGlobal::p()->Sound->Play("stars", (1.0f - DefaultCamera->Zoom) + 0.25f * 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 
 	DefaultCamera->Zoom = VInterpolate::Float(1.0f, 0.25f, (player->Position.x - (VGlobal::p()->Width / 4.0f)) / (VGlobal::p()->Width / 2.0f));
 	if (player->Position.x > VGlobal::p()->Width * 1.2f ||

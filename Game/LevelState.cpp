@@ -153,7 +153,7 @@ void LevelState::Update(float dt)
 
 		uiTimer->Restart();
 
-		VGlobal::p()->Sound->Play("stars", 0.25f * 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+		VGlobal::p()->Sound->Play("stars", 0.25f * 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 	}
 
 	if (VGlobal::p()->Input->IsButtonDown("Left") || VGlobal::p()->Input->IsButtonDown("Right"))
@@ -176,7 +176,7 @@ void LevelState::Update(float dt)
 					optionStars[i]->Start();
 					option[i]->Kill();
 
-					VGlobal::p()->Sound->Play("buy", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+					VGlobal::p()->Sound->Play("buy", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 
 					switch (optionType[i])
 					{

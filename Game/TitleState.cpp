@@ -38,6 +38,7 @@ void TitleState::Initialise()
 		VGlobal::p()->PostProcess = std::move(multipass);
 	}
 
+	points[points.size() - 1].y = VGlobal::p()->Random->GetInt((VGlobal::p()->Height / 4) - 6, 6);
 	Tilemap[0] = new VTilemap();
 	Tilemap[0]->Position.y = 100.0f;
 	Tilemap[0]->Velocity.x = -100.0f;
@@ -203,7 +204,7 @@ void TitleState::UpdateEntries()
 		Options[i]->SetText(menuOptions[i]);
 	}
 
-	VGlobal::p()->Sound->Play("blip", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+	VGlobal::p()->Sound->Play("blip", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 }
 
 void TitleState::SelectEntries()
@@ -218,7 +219,7 @@ void TitleState::SelectEntries()
 		break;
 	}
 
-	VGlobal::p()->Sound->Play("start", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+	VGlobal::p()->Sound->Play("start", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 }
 
 void TitleState::UpdateBackgroundTilemap(unsigned int index)

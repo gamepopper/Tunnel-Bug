@@ -208,7 +208,7 @@ void PlayState::Initialise()
 		controls->ZoomFactor = 0.0f;
 		Add(controls);
 
-		controls->SetPositionAtCentre(VGlobal::p()->Width / 2.0f, 600.0f);
+		controls->SetPositionAtCentre(VGlobal::p()->Width / 2.0f, 200.0f);
 	}
 	
 	player->Health = (float)Global.Health;
@@ -239,7 +239,8 @@ void PlayState::Initialise()
 			p->AngleVelocity += VGlobal::p()->Random->GetFloat(Global.RotationSpeed, -Global.RotationSpeed) * 5;
 			player->Scale *= 1.1f;
 
-			VGlobal::p()->Sound->Play("hit", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+			VGlobal::p()->Sound->Play("hit", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
+			DefaultCamera->Shake(0.01f, 0.5f);
 
 			if (!p->alive)
 			{
@@ -247,7 +248,7 @@ void PlayState::Initialise()
 				playerStars->Explosion = true;
 				playerStars->Start();
 
-				VGlobal::p()->Sound->Play("crash", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+				VGlobal::p()->Sound->Play("crash", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 				VGlobal::p()->Music->Fade(false, 1.0f);
 			}
 		}
@@ -258,7 +259,7 @@ void PlayState::Initialise()
 			p->Health += 15;
 		
 		o->Kill();
-		VGlobal::p()->Sound->Play("orb", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+		VGlobal::p()->Sound->Play("orb", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 	};
 
 	uiTimer = new VTimer();
@@ -279,10 +280,11 @@ void PlayState::Update(float dt)
 	else
 	{
 		curHealth = 0;
-		gameOverText->SetText("Game Over! You lasted this long:\n" + GetTimeString(Global.TotalTime + Global.Time));
+		gameOverText->SetText("Game Over! You lasted this long:\n" + GetTimeString(Global.TotalTime + Global.Time) + "\nPress Forward");
 		gameOverText->SetFillTint(VColour::HSVtoRGB(0.0f, 0.0f, 1.0f, uiTimer->Seconds() > 1.0f ? 1.0f : uiTimer->Seconds()));
 		if (uiTimer->Seconds() > 2.0f && VGlobal::p()->Input->IsButtonDown("Forward"))
 		{
+			VGlobal::p()->Music->Stop();
 			VGlobal::p()->ChangeState(new TitleState());
 		}
 
@@ -319,7 +321,7 @@ void PlayState::Update(float dt)
 	if (uiTimer->Milliseconds() > 100)
 	{
 		if (VGlobal::p()->Input->IsButtonDown("Forward"))
-			VGlobal::p()->Sound->Play("stars", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+			VGlobal::p()->Sound->Play("stars", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 
 		if (player->Health > 0.0f)
 			player->Health -= 0.05f;
@@ -334,7 +336,7 @@ void PlayState::Update(float dt)
 				playerStars->Explosion = true;
 				playerStars->Start();
 
-				VGlobal::p()->Sound->Play("crash", 100.0f, VGlobal::p()->Random->GetFloat(1.5f, 0.5f));
+				VGlobal::p()->Sound->Play("crash", 100.0f, VGlobal::p()->Random->GetFloat(1.1f, 0.9f));
 				VGlobal::p()->Music->Fade(false, 1.0f);
 			}
 		}
