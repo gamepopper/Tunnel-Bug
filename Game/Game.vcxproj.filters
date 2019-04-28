@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{ca0c0090-9256-4fe7-ac7d-c16c3571c4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4de388cc-6f56-4ec2-946d-fff936f3cd43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VFrame">
+      <UniqueIdentifier>{0af0e144-be24-4138-b7c8-8dde1bd41902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VFrame\depend">
+      <UniqueIdentifier>{aa55d25d-a7d1-46f4-b3d7-f7448457e54a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LevelState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransitionPostEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DBatchModelGroup.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DCamera.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DLightShader.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DModel.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DObject.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DObjModel.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DScene.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DShader.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VAnimation.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VAsync.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VBackdrop.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VBase.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VCamera.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VCollision.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VContent.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VEmitter.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGame.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGlobal.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGroup.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VInputHandler.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VInterpolate.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VMusic.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VObject.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VParticle.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsGroup.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsJoints.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsObject.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPostEffect.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRandom.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRenderGroup.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRenderLayer.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VShape.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VSoundManager.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VSprite.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VState.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VText.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTextPath.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTiledSprite.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTilemap.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTimer.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTrailArea.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTypedText.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\XInputDevice.cpp">
+      <Filter>Source Files\VFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\depend\gamepad.c">
+      <Filter>Source Files\VFrame\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="GoalState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BloomPostEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WavePostEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TransitionPostEffect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelState.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayState.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleState.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DBatchModelGroup.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DCamera.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DLight.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DLightShader.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DModel.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DObject.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DObjModel.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DScene.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\V3DShader.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VAnimation.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VAnimationManager.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VAsync.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VBackdrop.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VBase.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VCamera.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VCollision.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VColour.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VContent.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VEmitter.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGame.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGlobal.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VGroup.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VInputHandler.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VInterpolate.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VMusic.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VObject.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VParticle.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsGroup.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsJoints.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPhysicsObject.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VPostEffect.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRandom.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRange.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRenderGroup.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VRenderLayer.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VShape.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VSoundManager.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VSprite.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VState.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VText.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTextPath.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTile.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTiledSprite.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTilemap.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTimer.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTrailArea.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\VTypedText.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\XInputDevice.h">
+      <Filter>Source Files\VFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\depend\gamepad.h">
+      <Filter>Source Files\VFrame\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Libs\Vigilante-Game-Framework\VFrame\depend\tiny_obj_loader.h">
+      <Filter>Source Files\VFrame\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="GoalState.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BloomPostEffect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WavePostEffect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
