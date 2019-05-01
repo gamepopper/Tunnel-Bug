@@ -40,5 +40,5 @@ int main()
 	VGlobal::p()->Input->SetButtonInput("Right", sf::Keyboard::Right, GAMEPAD_BUTTON::BUTTON_RIGHT_SHOULDER);
 	VGlobal::p()->Input->SetButtonInput("Forward", sf::Keyboard::Space, GAMEPAD_BUTTON::BUTTON_A);
 	
-	return game->Run("Tunnel Bug", new TitleState(), 640, 360, 1280, 720, 60.0f, 7, settings);
+	return game->Run("Tunnel Bug", new TitleState(), 1280, 720, 60.0f, 7, settings);
 }

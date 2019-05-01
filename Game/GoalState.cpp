@@ -17,6 +17,7 @@ void GoalState::Initialise()
 	PlayState::Global.Score = 0;
 	PlayState::Global.PathWidth = 30;
 	PlayState::Global.NumPoints = 3;
+	PlayState::Global.Time = 0.0f;
 	PlayState::Global.TotalTime = 0.0f;
 	PlayState::Global.RotationSpeed = 180.0f;
 	PlayState::Global.OrbSpeed = 3.0f;

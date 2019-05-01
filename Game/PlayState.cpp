@@ -19,7 +19,7 @@ float CosineInterpolate(float y1, float y2,	float mu)
 sf::String GetTimeString(float t)
 {
 	time_t time = (time_t)t;
-	tm* cur_time = localtime(&time);
+	tm* cur_time = gmtime(&time);
 
 	char s[256];
 	strftime(s, 256, "%T", cur_time);
@@ -74,7 +74,7 @@ void PlayState::GenerateMap(std::vector<sf::Vector2u>& points, int pathWidth)
 	{
 		if (i > 0)
 		{
-			VSprite* o = new OrbSprite(points[i].x * 2.0f, VGlobal::p()->Random->GetFloat(((points[i].y * 2.0f) - 1.0f) + pathWidth, ((points[i].y * 2.0f) - 1.0f) - pathWidth), Global.OrbSpeed);
+			VSprite* o = new OrbSprite((points[i].x * 2.0f) - 1.0f, ((points[i].y + VGlobal::p()->Random->GetInt(pathWidth, -pathWidth)) * 2.0f) - 1.0f, Global.OrbSpeed);
 			orbs->Add(o);
 		}
 
@@ -83,9 +83,9 @@ void PlayState::GenerateMap(std::vector<sf::Vector2u>& points, int pathWidth)
 			float mu = (j - points[i + 0].x) / (float)(points[i + 1].x - points[i + 0].x);
 			int y = (int)CosineInterpolate((float)points[i + 0].y, (float)points[i + 1].y, mu);
 
-			if (j == (points[i + 1].x + points[i + 0].x) / 2)
+			if (i > 0 && j == (points[i + 1].x + points[i + 0].x) / 2)
 			{
-				VSprite* o = new OrbSprite((float)(points[i + 1].x + points[i + 0].x), (float)VGlobal::p()->Random->GetInt(y + pathWidth, y - pathWidth), Global.OrbSpeed);
+				VSprite* o = new OrbSprite((j * 2.0f) - 1.0f, ((y + VGlobal::p()->Random->GetInt(pathWidth, -pathWidth)) * 2.0f) - 1.0f, Global.OrbSpeed);
 				orbs->Add(o);
 			}
 
@@ -378,5 +378,11 @@ void PlayState::Update(float dt)
 		Global.TotalTime += Global.Time;
 
 		VGlobal::p()->ChangeState(new LevelState());
+	}
+
+	if (player->Position.x + (player->Size.x / 2.0f) < 0.0f)
+	{
+		player->Position.x = -player->Size.x / 2.0f;
+		player->Velocity.x = 0.0f;
 	}
 }
